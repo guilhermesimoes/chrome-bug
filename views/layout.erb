@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href='/stylesheets/application.css' media='screen' rel='stylesheet' type='text/css'>
+  <title>Missing Vary Header Bug</title>
+</head>
+<body>
+  <div class='main-header'>
+    <h1 class='logo'>Missing Vary Header Bug</h1>
+  </div>
+
+  <ul class='nav-list inline-menu group'>
+    <li>
+      <span>Start! →</span>
+    </li>
+    <li>
+      <a href='/page1' class='nav-link js-ajax-link' data-remote='true'>Page 1 (loaded with xhr) →</a>
+    </li>
+    <li>
+      <a href='/page2' class='nav-link'>Page 2</a>
+      <a href='https://www.google.com' class='nav-link'>(or Google or any other page) →</a>
+    </li>
+    <li>
+      <span>Now click the back button</span>
+    </li>
+  </ul>
+
+  <div id='js-content'>
+    <%= yield %>
+  </div>
+
+  <script src='/javascripts/jquery.min.js' type='text/javascript'></script>
+  <script src='/javascripts/rails.js' type='text/javascript'></script>
+  <script src='/javascripts/main.js' type='text/javascript'></script>
+</body>
+</html>

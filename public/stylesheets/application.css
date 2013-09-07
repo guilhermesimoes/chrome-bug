@@ -1,0 +1,23 @@
+body {
+  font-size: 16px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+.logo {
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list > li {
+  float: left;
+  margin: 0 10px;
+}
+
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
